@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;
+            min-width: 800;
+            margin: auto;
+        }
+        img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <!--arrumar a rolagem lateral quando alguem diminiu o tamnho do navegador-->
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam libero, odit neque illum veniam commodi a culpa ad delectus, necessitatibus veritatis sint! Repellat quis quia culpa necessitatibus aperiam voluptatibus ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit non dolores facilis minima aut optio blanditiis autem voluptatibus fugit ex reiciendis possimus eligendi, excepturi amet error rem. Corporis, eaque magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cumque asperiores ad culpa? Ex iusto enim, iure magnam tempore placeat dicta tenetur magni sit inventore voluptate eaque! Similique, velit dicta.</p>
+        <picture>
+            <source media="(max-width: 800px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam libero, odit neque illum veniam commodi a culpa ad delectus, necessitatibus veritatis sint! Repellat quis quia culpa necessitatibus aperiam voluptatibus ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit non dolores facilis minima aut optio blanditiis autem voluptatibus fugit ex reiciendis possimus eligendi, excepturi amet error rem. Corporis, eaque magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cumque asperiores ad culpa? Ex iusto enim, iure magnam tempore placeat dicta tenetur magni sit inventore voluptate eaque! Similique, velit dicta.</p>
+    </main>
+</body>
+</html>
