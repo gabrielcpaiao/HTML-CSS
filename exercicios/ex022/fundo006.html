@@ -7,17 +7,25 @@
     <title>Document</title>
     <style>
         body {
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
-            background-repeat: repeat-y;
-            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: cover;*/
+            /*criar um vinculo para quando rolar a tela e ficar com o fundo travado*/
+            /*background-attachment: fixed;*/
+
+            /*Shorthand -  background
+            color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,7 +37,11 @@
     <!--div especial (div semantica)-->
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dolores accusantium commodi molestias consequuntur saepe impedit. Neque magnam veniam, maiores deserunt voluptatem et, consequatur eius nemo consequuntur iure architecto enim.lo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vel voluptatem, quae voluptatibus numquam, molestiae dignissimos exercitationem harum necessitatibus ab maxime cupiditate! Voluptate alias iusto quibusdam. Tenetur sequi autem suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis porro iusto modi nobis consequatur blanditiis provident ab excepturi officia perferendis ullam laudantium iure omnis amet, optio facilis. Error, rerum consequatur?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dolores accusantium commodi molestias consequuntur saepe impedit. Neque magnam veniam, maiores deserunt voluptatem et, consequatur eius nemo consequuntur iure architecto enim.lo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vel voluptatem, quae voluptatibus numquam, molestiae dignissimos exercitationem harum necessitatibus ab maxime cupiditate! Voluptate alias iusto quibusdam. Tenetur sequi autem suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis porro iusto modi nobis consequatur blanditiis provident ab excepturi officia perferendis ullam laudantium iure omnis amet, optio facilis. Error, rerum consequatur?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dolores accusantium commodi molestias consequuntur saepe impedit. Neque magnam veniam, maiores deserunt voluptatem et, consequatur eius nemo consequuntur iure architecto enim.lo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vel voluptatem, quae voluptatibus numquam, molestiae dignissimos exercitationem harum necessitatibus ab maxime cupiditate! Voluptate alias iusto quibusdam. Tenetur sequi autem suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis porro iusto modi nobis consequatur blanditiis provident ab excepturi officia perferendis ullam laudantium iure omnis amet, optio facilis. Error, rerum consequatur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, enim molestiae unde fugit totam voluptatem ipsum id quae ab ducimus nisi velit consequuntur distinctio quis incidunt omnis sed iste! Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate, soluta nam magni aperiam nobis id debitis, reiciendis aut libero quos repudiandae ducimus natus qui enim, cumque numquam eaque at! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum quia laborum praesentium nostrum saepe dolor, perspiciatis atque porro iusto odio earum totam ipsa ab sapiente consectetur quas obcaecati tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia fugiat facilis ut soluta reprehenderit id? Aliquid quos cum assumenda, repudiandae ratione quis est facilis dolorem. Accusantium cupiditate nemo aliquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, enim molestiae unde fugit totam voluptatem ipsum id quae ab ducimus nisi velit consequuntur distinctio quis incidunt omnis sed iste! Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate, soluta nam magni aperiam nobis id debitis, reiciendis aut libero quos repudiandae ducimus natus qui enim, cumque numquam eaque at! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum quia laborum praesentium nostrum saepe dolor, perspiciatis atque porro iusto odio earum totam ipsa ab sapiente consectetur quas obcaecati tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur fugiat minima incidunt sapiente quis ratione cumque! Ut beatae ipsum sunt excepturi, asperiores minima deleniti autem soluta ratione quaerat odio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, enim molestiae unde fugit totam voluptatem ipsum id quae ab ducimus nisi velit consequuntur distinctio quis incidunt omnis sed iste! Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate, soluta nam magni aperiam nobis id debitis, reiciendis aut libero quos repudiandae ducimus natus qui enim, cumque numquam eaque at! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum quia laborum praesentium nostrum saepe dolor, perspiciatis atque porro iusto odio earum totam ipsa ab sapiente consectetur quas obcaecati tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illum dolorum amet consequatur recusandae laboriosam aliquam modi repellendus similique ratione mollitia deserunt hic dolor fuga, quo asperiores ea error accusamus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, enim molestiae unde fugit totam voluptatem ipsum id quae ab ducimus nisi velit consequuntur distinctio quis incidunt omnis sed iste! Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate, soluta nam magni aperiam nobis id debitis, reiciendis aut libero quos repudiandae ducimus natus qui enim, cumque numquam eaque at! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum quia laborum praesentium nostrum saepe dolor, perspiciatis atque porro iusto odio earum totam ipsa ab sapiente consectetur quas obcaecati tempore!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, enim molestiae unde fugit totam voluptatem ipsum id quae ab ducimus nisi velit consequuntur distinctio quis incidunt omnis sed iste! Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate, soluta nam magni aperiam nobis id debitis, reiciendis aut libero quos repudiandae ducimus natus qui enim, cumque numquam eaque at! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolorum quia laborum praesentium nostrum saepe dolor, perspiciatis atque porro iusto odio earum totam ipsa ab sapiente consectetur quas obcaecati tempore!</p>
     </main>
 </body>
 </html>
