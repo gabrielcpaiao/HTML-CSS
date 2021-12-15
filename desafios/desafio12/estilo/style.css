@@ -62,7 +62,12 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 3vw;
+}
+
+section > p {
+    /*Espaços entre as "estrofes" quando houver duas estrofes juntas*/
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -73,13 +78,30 @@ section.normal {
 section.imagem {
     background-color: rgb(77, 77, 77);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.616);
+    /*Tamanho da imagem*/
+    background-size: cover;
+    /*fixar a imagem em um único lugar para poder rolar a barra com o texto*/
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     /*Caixa que se adapta ao tamanho do conteúdo*/
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.438);
+    /*deslocamento lateral e vertical, espalhamento e a cor*/
+    text-shadow: 1px 1px0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    /*eixo x e y ou y e x. Acho que é a segunda sequência*/
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
