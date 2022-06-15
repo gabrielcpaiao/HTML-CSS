@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,9 +21,33 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd){
+            /*tr:nth-child(2n)         (odd)todas as ímpares*/
+            /*Efeito zebrado*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){
+            /*Efeito zebrado nas pares*/
+            background-color: lightgray;
         }
 
         td.num {
@@ -35,18 +60,23 @@
     <!--
         Anatomia para tabelas grandes 
         Table
+            Caption (Legenda da tabela)
             Thead
                 tr, td, th
             TBoody
                 tr, td, th
             TFoot
                 tr, td, th
+
+    th são títulos
+    td são dados
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -161,10 +191,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam dolor ea alias sint architecto temporibus voluptatum perspiciatis iste, incidunt distinctio et quasi maiores molestiae esse odit assumenda, earum sit. Dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores minus modi consequuntur dolore, id ex maiores ullam autem dicta magnam exercitationem. Maxime at aut obcaecati nostrum ipsum? Tempore, consectetur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, totam sequi non expedita, nulla maxime labore unde nisi aliquam perspiciatis impedit ea necessitatibus nemo iste dolores vero, vel distinctio in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui numquam distinctio ab, quae, cumque commodi, minus vel minima aliquam dignissimos eius dolorem reiciendis architecto pariatur dolorum rem odit ullam.</p>
 </body>
 </html>
